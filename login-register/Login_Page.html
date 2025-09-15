@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="Login.css">
+
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm py-2">
+        <div class="container-fluid">
+      
+          <a class="navbar-brand fw-bold" href="#">
+            <img src="/imgs/Nav-Logo.png" alt="Logo" height="80">
+          </a>
+      
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Nav items -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      
+              <!-- Home -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">Featured Course</a></li>
+                  <li><a class="dropdown-item" href="index.html">Top Categories</a></li>
+                  <li><a class="dropdown-item" href="index.html">Testimonials</a></li>
+                </ul>
+              </li>
+      
+              <!-- Courses -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Courses</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Web Development</a></li>
+                  <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+                </ul>
+              </li>
+      
+              <!-- Shop -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Products</a></li>
+                  <li><a class="dropdown-item" href="#">Cart</a></li>
+                </ul>
+              </li>
+      
+              <!-- Pages -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
+      
+          </div>
+        </div>
+      </nav>
+
+
+
+    
+    <div class="main-wrapper">
+        <!-- Left Side Illustration -->
+        <div class="illustration d-none d-md-block"></div>
+      
+        <!-- Right Side Login Form -->
+    <div class="login-form">
+        <h2 class="text-center">Log in to teach, learn, and grow!</h2>
+
+        <form id="loginForm">
+        <input type="email" class="form-control" placeholder="Email" required />
+        <input type="password" class="form-control" placeholder="Password" required />
+
+        <div class="text-end mb-3">
+            <a href="#" class="text-decoration-none" style="color: #7b2cbf;">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-purple w-100">Login</button>
+        </form>
+
+        <div class="form-divider">or</div>
+
+        <button class="btn btn-outline-secondary w-100 social-btn mb-2">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEkUlEQVR4nO2Zb0wbZRzHn3taesUtRpOJYbo/DoQM5c/GMgryzxkYxbGBiQsbNBCEFGaIY8zCCuaUMSiQAQMGQWAgcSY2GeuNuzpc8NqNvRoCItE3841Dthj3ToNzbX+mVRBI197Zo2VJv8n3XZ+nn89dn6dPrwj5448/HgcoJIWqgGIoxywU4HuQTfwJSsIKBxBAKgJIQzbIJhZBhX+BE/g6VAUU2ccgXwc0UgWU4tvwNmGBJASCqiQsoMa3QRsQ433wOlk4qPEsvCkQ2llTEUAxnoEaFOIdeA3RCumEzWPwtT2IrHCK0K0f+HkUCMX4B9HBk9b0PTwNFJKJC9+NngcVfrDu8En/toJoFw9+EMnhOPGr1+DLCE40eIeAGn/vPXgsMvyHRIfgrbEMT0IlroUmaQpQaAtQKAjOSN6C05hy7Db21zgbW4pN4sI3kyGQQVh5g5+W9PJZfEChZ+ADydAqkVKR4R1vVIHv8IIvwPNwDr0oeP4aFAJ5+P76wJvl22CcfAQaCUCyC/gSPAV6JEEbLWAmdWAmwdHeAIB0wvmV35DweiQBs2x+WcDeURmACv8Hn0lYoAK9hDZiwCSPXwW/VI4E0En/ObuclPSjjRowybROBZY6FPAAyhGJNmrATF5xKWCSdQiZL1gzC2I0XDthO9rUd9e9gImccynAkRm+EAjWzMIbddcW+Qg8dCMQ6iuB3TW3rHwEHrkWQJt9JbCjehKeaoHtVd+C5x+hm7IwXwns1t60Pd2L+JNRHovYTI642UY7fSVwRDc8z0NAduZJ8A+5Z6Geif/jvF4RiEROy3D+puiPvrG4Eii/0DjqXoALVDiDnx0PBhWthENXs6HDGHtJbIGTnfX97u6Arq/iuHsBQBjMsntL4DYzCfRYOGQbDjvg7c2jlZaL11/bJhZ8W496Z2SNyeoK/vVas4XiKH5P88BENtrhfzdthrNMwjL4ylaPJi9wXIrHjwcpjpIeafxswd3VL2lrm+A9KXCBL98df+GvEjrdKfxSP2YTZjyRoDhKmt/SM+d2/6+egsbuylhBkzcwihlX8CvvRP/X4VuFwvfeiNhe1lX3E5/d51hz75zQ+RE9FvZKPq208pHIp5WWzq/2DlCDKXJ38w6PRW1qZ/b15RmU1pyRHDja2uH2FEp9ekrQl+dyutmY1iweAitFGljFdJdxL6VnIw5cGdsVdJkL2zJgjEq8aNxTV8ckTNpfs3JM1kgOFPZQsLXqO6cC77c3dSNPomPjpvkKeNKiwXLYWX1nFfy7TQM/Ik+j10fINHTqfW9IFH5RCJG1Jgd8ev2Xv53o6hJ0cHxiOG7HczVM4oI3JI7pc0HVemGeGq4MEgV+hYT8LBM/K2RN/J+eYxXTRmPo+v3m7jNGNecaMq2iX3lDprWXjWlG3sgwvSe0gY2beseQ5TF4ztXDjqt++caru5C3MzQWGdvM7L9VZDj4WCh4AZ3xuJGJm/icifb+n3xrowck6WeiC1uN+0a1TOLPajptUWVQWu13yH4IzDVk2tSGtMWqa8nzLex+ts8YU2Afg/zxxx/kaf4GzSVnCicBYF0AAAAASUVORK5CYII=" alt="google-logo">
+            Continue with Google
+        </button>
+
+        <button class="btn btn-outline-secondary w-100 social-btn mb-3">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFO0lEQVR4nO3ZS1BbZRQA4DsWKa9CKZBYimAhPEJbaJ3qwo0rx4U7K7UOjitnHJ26cuE4I4RXeL/fkBBIgljFRem4cNxoO6OpbcqIohRIGgLkeRNyb25aCJAc5w/VoXqT+wrURc7M2Wbyzf845z8Xw2IRi1gcWuRrKFGxhqooUpPywnFyWqIibhaqSL1kjNDnK4kf85Ub0/kKj/y00l0hGfNmYf+nOPcFkV6qpT4uUXvvFE+QwWK1F4omSCgc30uJioCCMZQeyFd64LRiI5QvjLiDuSPu27kjrqt5457jTxUg1VLNUi3lLdFQgACsEaMbkDfiDmXusAtyhnAyZ9DZmNd1yKASje+9Eq3PIdVSIBTx/BBKHHIGcTg1gNtz+vHKAwcUK/Fj0knflFTrgwNAwKkBJ2T3O+Fkn0Ob1e9IORDE2SlKXDpJ3TsEBKAU99r14kGb6AAQvsXDQjzXawdxjx3E3bZFcVuUMGg7lWqp2UNH9NhB1G2DrE6bPirbrHTSp40Woljhhte/9sDlGQKuzBDwxvQGvHZtA8rHcHpEF0orZHRarwm+naKBeP87L+gs27ATgLDxogqnRWR2WiGjwwoZ7ZZK3nVC6BVboHDDN4tbwCYuPIaI6BAdFkhvW7endZm415nHxU7QSozObbJC/A0RhUGcaEe5Dumt63LOqyHVUKQQxKtfeiAQZO2A82POyIi2dUhrXSM4rUqodxJ4sBURVmNzJwh62zbcXPXvpdkPJcOOiIjjrWuhTG1Z/Yg1JNQACrxi5/EdWsSCawfKlM7IB7uDHpHWsgapTWYd+1acSxdLg8gbxsPeUO/e8PBHNK8iSDCl3ZLJCCmaoC4LLXZSpSvslsrpE4BoXoVjTWZIka+8xQxRk3KhFfui2k0LMZO7whGNZkiWm+oYIehlJ7TteFlNvyJ/4DuCESmNK5DUYPqKESIZJ24J7Z1eigARikiWr0Biw8oPzCuiImeFNoAXJyJBhCGSGlYgsf7BPUZIgYqY5YKouE4AsRV8Ikk/fSXcDQJ4NgP/SYdvF060sUMkNZggoY4NREnc4rIS79wgQGgs4NusEYn1JkioNTJvrdDIhsN2igZkZvERe0TdAzhaa2Q+7KG5E4czgd4VQqNd52WNSNiDMF+/aHjG5WC/fd0jGPLBt24uCIivNV5iXpFBSoSGZ2yfp69oXdCn9/2TvXd9MD73kPYP448C0P2LF7pu70sdCWXDVvaIGkMAk91nblFQoAkg7zd2lw0uKB20kHnn3qHmdLDr9iOMEC8z/swKsQdxXeWLQHXivCIyhDeixghx1cYPWUPQLBaNMfkgULErHw0PEYJ4VrZMYJ8a0zAugWaxfBCoYpeP2sNC+CMMcKTK0IBxDUmPKzW7H7dyRaC2o4wBwgcRV71sx2Q8hg+hVenHK7kiUO9UNmoLC+GHMMAznxuuYELiZK9dwwWBGsBzI/SQ3x3bvBBxVctTmNBA48rQQJnD8/TssDUChBviSPXSHeyTX5OxaASaiqOBMttHUXiInyNi+T722VJ0P9Fl961nZHZZdWzeE2eGwkNYI6qW7mIyQ3Q/K+zfZpmdFi3To6h00BIBwuZMLE1EbTtFCjRQRrPYcC+7SBCGK9Yq+HbiGmh0iWaxaS1r5L/bDulAeEi4in2kermec9WOZqQ3G9PQGBNNAFObzQFUJ6T99JDf7P4nuljUAIZ6p6cJoAs0AUxpWrl0ZmCt/XvDQ9NPq1uueYffN+/0+3TmTffkHLVwtMZYHy8zvIk1/plB+yOxiEUssIOIvwDQJKCW0Y9CsQAAAABJRU5ErkJggg==" alt="facebook-new">
+            Continue with Facebook
+        </button>
+
+        <div class="text-center mt-3">
+        Don’t have an account? <a href="/Register_Page.html" style="color: #7b2cbf;">Sign Up</a>
+        </div>
+    </div>
+    </div>
+
+
+
+      <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo + Description -->
+      <div class="footer-section">
+        <img src="/imgs/Footer-Logo.png" alt="Mastery Hub Logo" class="footer-logo">
+        <p>
+          Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Course</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-section">
+        <h4>Contact us</h4>
+        <p><i class="bi bi-telephone"></i> 071 555-0104</p>
+        <p><i class="bi bi-envelope"></i> masteryhub@gmail.com</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Bottom Row -->
+    <div class="footer-bottom">
+      <p>Copyright 2023 | All Rights Reserved</p>
+      <div class="social-icons">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-behance"></i></a>
+        <a href="#"><i class="bi bi-dribbble"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Login successful (simulation)');
+  });
+</script>
+
+</body>
+</html>
