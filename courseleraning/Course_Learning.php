@@ -1,0 +1,235 @@
+<?php
+  $title = "Course Learning";
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> <?php echo $title; ?></title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Google Font -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="Course_Learning.css" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="Image/Mastery Hub 2.png" alt="Mastery Hub Logo">
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Content -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+
+       
+    <!-- Nav items -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Home -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home 1</a></li>
+            <li><a class="dropdown-item" href="#">Home 2</a></li>
+          </ul>
+        </li>
+
+        <!-- Courses -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Courses</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Web Development</a></li>
+            <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+          </ul>
+        </li>
+
+        <!-- Shop -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Products</a></li>
+            <li><a class="dropdown-item" href="#">Cart</a></li>
+          </ul>
+        </li>
+
+        <!-- Pages -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About Us</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+        <!-- Middle: Search -->
+<div class="search-box position-relative mx-lg-auto my-3 my-lg-0">
+  <input type="text" class="form-control" placeholder="What would you like to learn?">
+  <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3"></i>
+</div>
+
+        <!-- Right: Icons + Login + Signup -->
+<div class="d-flex align-items-center gap-3">
+  <!-- Cart Icon with Badge -->
+  <a href="#" class="text-dark position-relative">
+    <i class="bi bi-basket fs-5"></i>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+      0
+    </span>
+  </a>
+
+  <!-- User Icon -->
+  <a href="#" class="text-dark">
+    <i class="bi bi-person fs-5"></i>
+  </a>
+</div>
+          <a href="#" class="nav-link">Login</a>
+          <button class="signup-btn ms-2">Signup</button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+   
+<!-- Course Section -->
+<div class="container my-5">
+  <div class="row g-4">
+    <!-- Left Side -->
+    <div class="col-lg-8">
+      <!-- Video -->
+      <div class="ratio ratio-16x9 bg-dark rounded">
+        <video id="courseVideo" class="w-100 h-100" poster="img/poster.jpg" controls>
+          <source src="videos/lesson1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      
+
+      <!-- Intro Text -->
+      <div class="mt-4">
+        <h5><strong>Introduction 1 : What is JAVA GUI ?</strong></h5>
+        <p class="text-muted">
+          Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit amet,
+           consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+            Maecenas vitae mattis tellus. Nullam quis imperdiet augue.Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, 
+            at maximus ante fermentum sit amet.
+        </p>
+      </div>
+
+      <!-- Notes -->
+      <div class="mt-4">
+        <h5><strong>Create Your Note :</strong></h5>
+        <textarea id="notesBox" class="form-control" rows="6" placeholder="Type your notes here..."></textarea>
+      </div>
+    </div>
+
+    <!-- Right Side (Lesson Sidebar) -->
+<div class="col-lg-4">
+  <div class="lesson-sidebar p-3">
+    
+
+    <!-- Lesson Items -->
+    <div class="lesson-item active" data-src="videos/lesson1.mp4">
+      <span class="lesson-number">01</span>
+      <span class="lesson-title">Introduction : What is JAVA GUI ?</span>
+    </div>
+
+    <div class="lesson-item" data-src="videos/lesson2.mp4">
+      <span class="lesson-number">02</span>
+      <span class="lesson-title">Frames & Panels</span>
+    </div>
+
+    <div class="lesson-item" data-src="videos/lesson3.mp4">
+      <span class="lesson-number">03</span>
+      <span class="lesson-title">Event Handling</span>
+    </div>
+
+    <div class="lesson-item" data-src="videos/lesson4.mp4">
+      <span class="lesson-number">04</span>
+      <span class="lesson-title">Swing Components</span>
+    </div>
+
+    <div class="lesson-item" data-src="videos/lesson5.mp4">
+      <span class="lesson-number">05</span>
+      <span class="lesson-title">Final Project</span>
+    </div>
+
+    <!-- Download Section -->
+    <div class="text-center mt-5">
+      <h6 class="fw-bold mb-3">Download All Materials</h6>
+      <button class="download-btn">
+        Download <i class="fa-solid fa-download ms-2"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="footer-section">
+  <div class="footer-container">
+    <!-- Column 1 -->
+    <div>
+      <img src="Image/Matstery Hub 1.png" alt="Mastery Hub Logo" class="footer-logo" />
+      <p class="footer-desc">
+         Venam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-column about">
+      <h4>Quick Links</h4>
+      <a href="#" class="footer-link">About</a>
+      <a href="#" class="footer-link">Course</a>
+      <a href="#" class="footer-link">Contact</a>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-column">
+      <h4>Contact us</h4>
+      <p><i class="fa fa-phone me-2"></i>071 555-0104</p>
+      <p><i class="fa fa-envelope me-2"></i>masteryhub@gmail.com</p>
+    </div>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="footer-bottom">
+    <p>Copyright 2023 | All Rights Reserved</p>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-behance"></i></a>
+      <a href="#"><i class="fab fa-dribbble"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap + Custom JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Course_Learning.js"></script>
+</body>
+</html>
