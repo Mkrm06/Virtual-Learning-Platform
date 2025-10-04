@@ -79,13 +79,13 @@ Follow these steps to set up the project locally 👇
 
 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/<your-username>/online-learning-platform.git
+git clone https://github.com/<your-username>/virtual-learning-platform.git
 
 
 2️⃣ Move into the project folder
 
 ```bash
-cd online-learning-platform
+cd virtual-learning-platform
 ```
 
 ### 3️⃣ Set up the database
@@ -117,7 +117,7 @@ if ($conn->connect_error) {
 
 * Start Apache and MySQL in XAMPP
 * Open browser and visit:
-  👉 `http://localhost/online-learning-platform/`
+  👉 `http://localhost/virtual-learning-platform/`
 
 ---
 
