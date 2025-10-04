@@ -91,8 +91,8 @@ cd online-learning-platform
 ### 3️⃣ Set up the database
 
 * Open **phpMyAdmin**
-* Create a database named `online_learning`
-* Import `database.sql` file provided in the project
+* Create a database named `masteryhub`
+* Import `user.sql` file provided in the project
 
 ### 4️⃣ Configure the database connection
 
@@ -103,7 +103,7 @@ Edit `config/db_connect.php`:
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "online_learning";
+$db   = "masteryhub";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
