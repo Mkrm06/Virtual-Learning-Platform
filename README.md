@@ -143,4 +143,6 @@ if ($conn->connect_error) {
 Would you like me to:
 - Add **screenshot section placeholders** (e.g., login, dashboard, course pages)?  
 - Or make it match your **specific folder structure** (if you show me your folders)?
-```
+`
+
+
