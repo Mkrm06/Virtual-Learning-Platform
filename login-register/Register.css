@@ -1,0 +1,200 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+
+    /* Nav Bar Styling */
+    .search-bar {
+        width: 350px;
+      }
+      .btn-gradient {
+        background: linear-gradient(90deg, #004eeb, #7b2ff7);
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 20px;
+      }
+      .btn-gradient:hover {
+        opacity: 0.9;
+      }
+      .navbar-nav .nav-link.active {
+        color: #004eeb !important;
+        font-weight: 600;
+      }
+      @media (max-width: 991px) {
+        .search-bar {
+          width: 100%;
+          margin: 10px 0;
+        }
+      }
+
+
+
+  .main-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .illustration {
+    flex: 1;
+    background: url("imgs/Wavy_Edu-03_Single-12 1.png") no-repeat center center;
+    background-size: contain;
+    margin-left: 300px;
+    min-height: 800px;
+    max-width: 600px;
+    height: 100%;
+  }
+
+  .form-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .form-wrapper input,
+  .form-wrapper .form-check {
+    margin-bottom: 15px;
+  }
+
+  .btn-purple {
+    background-color: #7b2cbf;
+    color: white;
+  }
+
+  .btn-purple:hover {
+    background-color: #5a189a;
+  }
+
+  .social-login button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .main-wrapper {
+      flex-direction: column;
+    }
+
+    .illustration {
+      height: 250px;
+      background-position: top center;
+    }
+  }
+
+
+
+
+
+      /* Footer Styling */
+.footer {
+    background: linear-gradient(90deg, #4b00c7, #6a11cb);
+    color: #fff;
+    padding: 50px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-logo {
+    margin-bottom: 15px;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ffd43b;
+  }
+  
+  /* Divider */
+  .footer hr {
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+  }
+  
+  /* Bottom Section */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ffd43b;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-bottom {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
